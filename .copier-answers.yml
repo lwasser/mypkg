@@ -1,0 +1,7 @@
+template_mode: full
+project_name: "myPackage"
+package_description: |
+  A package that adds numbers
+author_name: "Your Name"
+author_email: "email@email.com"
+username: "yourusername"
