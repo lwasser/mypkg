@@ -1,6 +1,10 @@
 name: Publish to PyPI
 
 on:
+  pull_request:
+  push:
+    branches:
+      - main
   release:
     types: [published]
 
@@ -48,7 +52,7 @@ jobs:
     name: >-
       Publish Python 🐍 distribution 📦 to PyPI
     # Modify the repo name below to be your project's repo name.
-    if: github.repository_owner == 'lwasser'
+    if: github.repository_owner == 'yourusername'
     needs:
       - build
     runs-on: ubuntu-latest
