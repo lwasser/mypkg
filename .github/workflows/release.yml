@@ -48,7 +48,7 @@ jobs:
     name: >-
       Publish Python 🐍 distribution 📦 to PyPI
     # Modify the repo name below to be your project's repo name.
-    if: github.repository_owner == "yourusername"
+    if: github.repository_owner == 'lwasser'
     needs:
       - build
     runs-on: ubuntu-latest
