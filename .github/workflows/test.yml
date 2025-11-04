@@ -1,5 +1,5 @@
-name: Test Suite
-# Run the test suite on  pull requests and pushes to main branch
+name: Run Tests
+# Run the test suite on pull requests and pushes to main branch
 on:
   pull_request:
   push:
