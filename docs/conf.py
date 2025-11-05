@@ -1,23 +1,28 @@
 #
 # myPackage documentation build configuration file
 #
-import os
-import sys
 import importlib.metadata
-from datetime import datetime
 
-# Ensure src/ is on the path so autodoc can find the package
-sys.path.insert(0, os.path.abspath("../src"))
+# -- General configuration -----------------------------------------------------
 
-# Get the year so it automatically updates
-current_year = datetime.now().year
+# Add any Sphinx extension module names here, as strings. They can be extensions
+# coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
+extensions = [
+    "myst_parser",
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.autodoc",
+]
 
-# -- General project information
+# The suffix of source filenames.
+source_suffix = ".rst"
 
+# The master toctree document.
+master_doc = "index"
+
+# General information about the project.
 project = "myPackage"
-copyright = f"{current_year}, "
+copyright = "Copyright © 2025 Your Name"
 html_show_sphinx = False
-
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -26,42 +31,6 @@ try:
     version = importlib.metadata.version("mypackage")
 except importlib.metadata.PackageNotFoundError:
     version = "0.0.0"
-
-# -- General configuration -----------------------------------------------------
-
-# Add any Sphinx extension module names here, as strings. They can be extensions
-# coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = [
-    "myst_parser",
-    "sphinx_design",
-    "sphinx_copybutton",
-    "sphinx.ext.intersphinx",
-    "sphinx.ext.napoleon", # Support numpy style docstrings
-    # This allows you to create :::{todo} sections that will not be rendered
-    # in the live docs if you want to leave notes for future work in the docs
-    "sphinx.ext.todo",
-    # Auto generate docs
-    "autoapi.extension",
-]
-
-# Support Markdown source files & rst for api docs
-source_suffix = [".rst", ".md"]
-# The master toctree document.
-master_doc = "index"
-
-#--------- setup autoapi defaults for your api docs ---------------
-
-# AutoAPI configuration
-autoapi_type = "python"
-# point AutoAPI at your package sources; adjust if using src layout
-autoapi_dirs = ["../src"]
-# Don't let AutoAPI automatically insert a toctree (avoid duplicates)
-autoapi_add_toctree = False
-autoapi_keep_files = False
-autoapi_options = ["members", "undoc-members", "show-inheritance"]
-
-# The master toctree document.
-master_doc = "index"
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = "default"
@@ -75,25 +44,12 @@ language = "en"
 
 # -- Options for extensions ----------------------------------------------------
 # https://myst-parser.readthedocs.io/en/latest/syntax/optional.html
-# -- Options for myst markdown formatting
-myst_enable_extensions = [
-    "html_image",
-    "colon_fence",
-    "deflist",
-    "attrs_inline",
-]
+myst_enable_extensions = ["html_image"]
 
-myst_heading_anchors = 3
-myst_footnote_transition = False
-
-
-templates_path = ["_templates"]
-exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 # -- Options for HTML output ---------------------------------------------------
 
 html_theme = "pydata_sphinx_theme"
-html_static_path = ["_static"]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".

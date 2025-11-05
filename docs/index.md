@@ -8,6 +8,7 @@
 :caption: Contents:
 
 Home <self>
+Documentation <documentation/index>
 :::
 
 This is the landing page of your docs. you can update it as you'd like to.
@@ -41,8 +42,14 @@ If you see syntax like the syntax below, you are looking at rst.
    :caption: Contents:
 ```
 
+[API Documentation](./api/modules.rst)
+
 ## Copyright
 
 - Copyright © 2025 Your Name.
 - Free software distributed under the MIT License.
 
+```{toctree}
+:hidden:
+./api/modules.rst
+```

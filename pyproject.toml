@@ -222,8 +222,8 @@ features = [
 # hatch run docs:build will build your documentation
 # hatch run docs:serve will serve them 'live' on your computer locally
 [tool.hatch.envs.docs.scripts]
-build = ["sphinx-build {args:-W -b html docs docs/_build}"]
-serve = ["sphinx-autobuild docs --watch src/mypackage {args:-b html docs/_build/serve}"]
+build = ["sphinx-apidoc -o docs/api src/mypackage", "sphinx-build {args:-W -b html docs docs/_build}"]
+serve = ["sphinx-apidoc -o docs/api src/mypackage", "sphinx-autobuild docs --watch src/mypackage {args:-b html docs/_build/serve}"]
 
 
 #--------------- Format & style your code ---------------#
