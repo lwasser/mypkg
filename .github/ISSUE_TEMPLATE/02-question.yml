@@ -12,9 +12,9 @@ body:
       options:
         - label: I searched the [documentation](https://mypackage.readthedocs.io).
           required: true
-        - label: I looked through existing [discussion topics](https://github.com/yourusername/mypackage/discussions).
+        - label: I looked through existing [discussion topics](https://github.com/lwasser/mypackage/discussions).
           required: true
-        - label: I looked for [similar issues](https://github.com/yourusername/mypackage/issues).
+        - label: I looked for [similar issues](https://github.com/lwasser/mypackage/issues).
           required: true
         - label: I looked up my question/problem in a search engine.
           required: true
