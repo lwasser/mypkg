@@ -14,7 +14,7 @@ requires = ["hatchling", "hatch-vcs"]
 name = "mypackage"
 # You can chose to use dynamic versioning with hatch or static where you add it manually.
 dynamic = ["version"]
-description = "A package that adds numbers"
+description = "A package that adds numbers together."
 authors = [
     { name = "Leah Wasser", email = "email@email.com" },
 ]
@@ -56,7 +56,7 @@ docs = [
     "pydata-sphinx-theme~=0.16",
     "sphinx-autobuild>=2024.10.3",
     "sphinx-autoapi>=3.6.0",
-    "sphinx-design>=0.6.1",
+    "sphinx_design>=0.6.1",
     "sphinx-copybutton>=0.5.2",
 ]
 

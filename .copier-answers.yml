@@ -1,7 +1,6 @@
 template_mode: full
 project_name: "myPackage"
-package_description: |
-  A package that adds numbers
-author_name: "Your Name"
+package_description: "A package that adds numbers together."
+author_name: "Leah Wasser"
 author_email: "email@email.com"
-username: "yourusername"
+username: "lwasser"

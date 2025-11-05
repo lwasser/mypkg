@@ -41,13 +41,8 @@ If you see syntax like the syntax below, you are looking at rst.
    :caption: Contents:
 ```
 
-
 ## Copyright
 
 - Copyright © 2025 Leah Wasser.
 - Free software distributed under the MIT License.
 
-```{toctree}
-:hidden:
-./api/modules.rst
-```
