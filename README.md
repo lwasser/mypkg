@@ -29,5 +29,5 @@ To use mypackage in your code:
 
 ## Copyright
 
-- Copyright © 2025 Your Name.
+- Copyright © 2025 Leah Wasser.
 - Free software distributed under the [MIT License](./LICENSE).

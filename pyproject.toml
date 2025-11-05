@@ -16,7 +16,7 @@ name = "mypackage"
 dynamic = ["version"]
 description = "A package that adds numbers"
 authors = [
-    { name = "Your Name", email = "email@email.com" },
+    { name = "Leah Wasser", email = "email@email.com" },
 ]
 license = "MIT"
 requires-python = ">= 3.10" # Adjust based on the minimum version of Python that you support
